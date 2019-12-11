@@ -1,0 +1,8 @@
+{
+  "appId": "com.btm",
+  "appName": "BT-M",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

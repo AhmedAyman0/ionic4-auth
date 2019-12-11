@@ -1,0 +1,26 @@
+<ion-grid>
+  <ion-row>
+    <ion-col size="6" size="sm-6">
+<ion-card>
+  <div class="wrapper">
+  <img src="{{item.imgUrl}}" />
+</div>
+  <div class="ion-text-center">
+    <ion-card-title  color="text" style="margin: 1%;text-transform: capitalize;">{{item.name}}</ion-card-title>
+    <ion-card-title color="secondary">{{item.price | currency}}</ion-card-title>
+  </div>
+  <div  class="ion-text-start">
+    Founded in 1829 on an isthmus .
+    <div class="ion-text-center">
+    <ion-button>
+        Add To Cart
+    </ion-button>
+  </div>
+  </div>
+
+</ion-card>
+</ion-col>
+
+</ion-row>
+
+</ion-grid>

@@ -1,0 +1,26 @@
+<ion-header  >
+  <ion-toolbar color="primary">
+    <ion-title>discover</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="" >
+    <div *ngFor="let cat of categs" class="category-block">
+ 
+        <ion-row no-padding class="category-banner">
+          <ion-col text-left  tappable (click)="console.log('tapped')" align-self-center>
+            {{ cat.name }}
+          </ion-col>
+        </ion-row>
+     
+        <ion-slides [options]="sliderConfig">
+          <ion-slide *ngFor="let product of items">
+            <div >
+                <app-item *ngFor="let item of items" [item]="item"></app-item>
+
+            </div>
+          </ion-slide>
+        </ion-slides>
+     
+      </div>
+</ion-content>
